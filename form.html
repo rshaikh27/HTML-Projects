@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="formprac.js"></script>
+    <style>
+        .err-span{
+            color:red;
+            font-size:14px;
+
+        }
+        .err-hidden{
+            display:none;
+        }
+    </style>
+
+</head>
+<body >
+    <form>
+        <fieldset>
+            <legend>Personal details</legend>
+            <p>
+                <label>
+                    Salutation
+                    <br/>
+                    <select name="salutation">
+                        <option>None</option>
+                        <option>Mr.</option>
+                        <option>Ms</option>
+                        <option>Mrs.</option>
+                        <option>Dr.</option>
+                        <option>Prof.</option>
+                    </select> 
+                </label>
+            </p>
+            <h2>Select Nationality</h2>
+            <select name="Language">
+                <option value="indian">indian</option>
+                <option value="Nepali">Nepali</option>
+                <option value="others">others</option>
+            </select>
+            <h2>Select Language</h2>
+            <ul>
+            <li><input type="checkbox" name="language" value="hindi">Hindi</li>
+            <li><input type="checkbox" name="language" value="Marathi">marathi</li>
+            <li><input type="checkbox" name="language" value="urdu">urdu</li>
+            </ul>
+            <p>
+                <label>First name: <br><input name="fristname"placeholder="Enter your Firstname"/></label>
+            </p>
+            <p>
+                <label>Last name:<br><input name="lastname"placeholder="Enter your Lastname"/></label>
+            </p>
+            <p>
+                Gender:
+                <label><input type="radio" name="gender"value="male"/>Male</label>
+                <label><input type="radio" name="gender"value="female"/>Female</label>
+            </p>
+            <p>
+                <label>Email:<br><input type="email"name="email" placeholder="Type your email" hover/>
+                </label>
+            </p>
+            <p>
+                <label>Date Of Birth:<br><input type="date"name="birthdate"/></label>
+            </p>
+            <p>
+                <label>
+                    Phone.No:<br><input type="number"id="PhoneNo."placeholder="Enter valid phone number">
+                </label><br>
+                <span class="err-hidden err-span"id="phoneNoErrMsg">Enter valid phone no.</span>
+            </p>
+            <p>
+                <label>Password:<br><input type="password" id="password" placeholder="Type your password"/></label><br><br>
+                <span class="err-span err-hidden" id="PasswordErrorMsg">Password should contain at least one uppercase letter</span>
+                <span class="err-span err-hidden" id="PasswordLcErrorMsg">Password should contain at least one lowercase letter</span>
+            </p>
+            <p>
+                <label>
+                    Address:<br>
+                    <textarea name="address" cols="30" rows="3" placeholder="Type your full address"></textarea>
+                </label>
+            </p>
+            <p>
+                <button type="submit" onclick="func()">Submit</button>
+                 <button>Click me!</button>
+            </p>
+            
+        </fieldset>
+    </form>
+    
+</body>
+</html>
